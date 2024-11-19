@@ -19,8 +19,8 @@
         devShell = pkgs.mkShell {
           name = "typst";
           packages = with pkgs; [
+            tinymist
             typst
-            typst-lsp
             typstyle
           ];
         };
