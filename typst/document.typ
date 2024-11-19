@@ -1,10 +1,7 @@
 #let title = [Document Title]
 #let author = "Simone Ragusa"
 
-#set document(
-  title: title,
-  author: author,
-)
+#set document(title: title, author: author)
 #set heading(numbering: "1.")
 #set par(linebreaks: "optimized")
 #set page(
@@ -12,7 +9,7 @@
   numbering: "1",
   header: align(right + horizon, title),
 )
-#set text(font: "Linux Libertine", size: 11pt, lang: "en")
+#set text(font: "Libertinus Serif", size: 11pt, lang: "en")
 
 #align(center, text(17pt)[*#title*])
 
