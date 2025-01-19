@@ -19,12 +19,8 @@
         devShell = pkgs.mkShell {
           name = "python";
           packages = with pkgs; [
-            (python3.withPackages (
-              python-pkgs: with python-pkgs; [
-                numpy
-                matplotlib
-              ]
-            ))
+            (python3.withPackages (python-pkgs: [
+            ]))
             pyright
             ruff
           ];
